@@ -1,0 +1,30 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+
+{% block title %}UI/UX Design - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">UI/UX Design</h2>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Our UI/UX design services are centered around creating a seamless and enjoyable user experience. We combine creativity with strategy to craft intuitive and visually pleasing designs that keep your users engaged and boost your brand’s credibility.
+    </p>
+
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Our Approach:</h3>
+    <ul class="text-white" style="font-size: 1.1em; line-height: 1.8;">
+        <li>Research and User Analysis</li>
+        <li>Wireframing and Prototyping</li>
+        <li>User Testing for Optimal Experience</li>
+        <li>Design with Accessibility in Mind</li>
+    </ul>
+
+    <!-- Fotoja për Web Development -->
+    <div class="text-center my-5">
+        <img src="{% static 'images/uiuxdesign.jpg' %}" class="img-fluid rounded shadow" alt="Web Development Banner">
+    </div>
+
+    <div class="text-center my-5">
+        <img src="{% static 'images/ui_ux_design_banner.jpg' %}" class="img-fluid rounded shadow" alt="UI/UX Design">
+    </div>
+</div>
+{% endblock %}

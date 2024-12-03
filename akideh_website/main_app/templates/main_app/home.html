@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akideh Website - Home</title>
+
+    {% load static %}
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+</head>
+
+<body style="background-color: #121212; font-family: 'Poppins', sans-serif; color: #ffffff;">
+
+    <!-- Navbar Transparent -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="/">Akideh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/technologies/">Technologies</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section me efekt 3D -->
+    <div class="hero-section d-flex flex-column justify-content-center align-items-center text-center vh-100">
+        <h1 id="heroTitle" class="display-3">Transform Your Digital Experience</h1>
+        <button id="workTogetherBtn" class="btn btn-warning mt-4">Let's Work Together</button>
+    </div>
+
+    <!-- Seksioni i Shërbimeve të Avancuar -->
+    <div class="container py-5 text-center">
+        <h2 class="mb-5">Our Services</h2>
+        <div class="row">
+            <!-- Shërbimi 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Custom Web Development</h3>
+                        <p>Custom-built websites tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shërbimi 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">UI/UX Design</h3>
+                        <p>Designs that captivate and engage your users.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Shërbimi 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">SEO Services</h3>
+                        <p>Designs that captivate and engage your users.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shërbimi 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">E-Commerce Development</h3>
+                        <p>Designs that captivate and engage your users.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shërbimi 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">Mobile App Development</h3>
+                        <p>Designs that captivate and engage your users.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shërbimi 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="service-card card shadow h-100">
+                    <div class="card-body">
+                        <h3 class="card-title">CMS Development</h3>
+                        <p>Boost your ranking on search engines.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seksioni Kontakt -->
+    <div class="contact-section py-5 text-center">
+        <h2>Get in Touch</h2>
+        <button class="btn btn-outline-light mx-3" onclick="location.href='/contact/'">Contact Us</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <span>© 2024 Akideh Website. All rights reserved.</span>
+    </footer>
+
+    <!-- GSAP Animacionet -->
+    <script>
+        // Navbar efekt scroll
+        gsap.to("#navbar", {
+            scrollTrigger: {
+                trigger: "#navbar",
+                start: "top top",
+                toggleActions: "play none none reverse"
+            },
+            backgroundColor: "#1A1A1A",
+            duration: 0.5
+        });
+
+        // Animacion për shërbimet
+        gsap.from(".service-card", {
+            opacity: 0,
+            y: 100,
+            duration: 1,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: ".service-card",
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            }
+        });
+    </script>
+
+</body>
+</html>

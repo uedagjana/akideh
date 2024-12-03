@@ -1,0 +1,77 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+
+{% block title %}Technologies - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-5" style="font-family: 'Oswald', sans-serif;">Technologies We Use</h2>
+    <div class="row text-center">
+
+        <!-- HTML5 Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/html5.png' %}" alt="HTML5" class="img-fluid mb-3" style="height: 80px;">
+                <h5>HTML5</h5>
+            </div>
+        </div>
+
+        <!-- CSS3 Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/css-3.png' %}" alt="CSS3" class="img-fluid mb-3" style="height: 80px;">
+                <h5>CSS3</h5>
+            </div>
+        </div>
+
+        <!-- JavaScript Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/js.png' %}" alt="JavaScript" class="img-fluid mb-3" style="height: 80px;">
+                <h5>JavaScript</h5>
+            </div>
+        </div>
+
+        <!-- Python Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/python.png' %}" alt="Python" class="img-fluid mb-3" style="height: 80px;">
+                <h5>Python</h5>
+            </div>
+        </div>
+
+        <!-- Django Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/django.png' %}" alt="Django" class="img-fluid mb-3" style="height: 80px;">
+                <h5>Django</h5>
+            </div>
+        </div>
+
+        <!-- React Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/react.png' %}" alt="React" class="img-fluid mb-3" style="height: 80px;">
+                <h5>React</h5>
+            </div>
+        </div>
+
+        <!-- Node.js Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/nodejs.png' %}" alt="Node.js" class="img-fluid mb-3" style="height: 80px;">
+                <h5>Node.js</h5>
+            </div>
+        </div>
+
+        <!-- Bootstrap Logo -->
+        <div class="col-md-3 mb-4">
+            <div class="technology-card shadow-lg p-4 rounded">
+                <img src="{% static 'images/bootstrap.png' %}" alt="Bootstrap" class="img-fluid mb-3" style="height: 80px;">
+                <h5>Bootstrap</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

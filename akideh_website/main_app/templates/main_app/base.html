@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Akideh Website{% endblock %}</title>
+
+    {% load static %} <!-- Sigurohu që po ngarkon skedarët statikë -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body class="text-white" style="background-color: #121212; overflow-x: hidden;">
+
+    <!-- Navbar që srri ne vend-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1A1A1A;">
+        <a class="navbar-brand" href="/">Akideh</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/technologies/">Technologies</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <main class="container mt-5 flex-fill position-relative" style="z-index: 1;">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer që ne vend -->
+    <footer class="text-center text-white py-4" style="background-color: transparent;">
+        <span>© 2024 Akideh Website. All rights reserved.</span>
+    </footer>
+
+    <!-- Bootstrap dhe JavaScript për Navbar, Footer dhe efekte të tjera -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript për navbar dhe footer hover -->
+    <script src="{% static 'js/navbar_footer_hover.js' %}"></script>
+</body>
+</html>

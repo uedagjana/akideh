@@ -1,0 +1,208 @@
+/* ----------------------------------------------------
+   Global Styles - Këto stilime janë të vlefshme për të gjitha faqet
+----------------------------------------------------- */
+body {
+    background-color: #000000; /* Ngjyrë e zezë mat për sfondin */
+    color: #ffffff; /* Tekst i bardhë */
+    font-family: 'Poppins', sans-serif; /* Font modern për të gjithë tekstin */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif; /* Font për titujt */
+    color: #ffffff; /* Ngjyra e bardhë për të gjithë titujt */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Hapësirë ndërmjet shkronjave për titujt */
+}
+
+a {
+    color: #FFD700; /* Ngjyra e verdhë për të gjitha lidhjet */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff; /* Ngjyra e bardhë kur kalon mbi lidhjet */
+}
+
+/* ----------------------------------------------------
+   Navbar Styles - Stilet për navbar-in e të gjitha faqeve
+----------------------------------------------------- */
+.navbar {
+    background-color: #000000; /* Ngjyrë e errët për navbar-in */
+    border-bottom: 2px solid #FFD700; /* Vijë e verdhë poshtë navbar-it */
+}
+
+.nav-link {
+    color: #ffffff; /* Ngjyra e bardhë për lidhjet e navigacionit */
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #FFD700; /* Ndrysho ngjyrën në të verdhë kur kalon mbi to */
+}
+
+/* ----------------------------------------------------
+   Footer Styles - Këto stilime janë për të gjitha faqet
+----------------------------------------------------- */
+footer {
+    background-color: #1A1A1A; /* Ngjyrë e errët për sfondin e footer-it */
+    color: #FFD700; /* Teksti i verdhë në footer */
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    border-top: 2px solid #FFD700; /* Vijë e verdhë sipër footer-it */
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff; /* Teksti bëhet i bardhë kur kalon mbi to */
+}
+
+/* ----------------------------------------------------
+   Home Page Styles
+----------------------------------------------------- */
+
+/* Seksioni i parë - Slogani kryesor */
+#starCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.display-3 {
+    font-family: 'Sixtyfour Convergence', sans-serif; /* Font për sloganin kryesor */
+    color: #ffffff; /* Ngjyra e bardhë për sloganin (ndryshuar) */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Hije e lehtë për tekstin */
+}
+
+/* Butoni në seksionin e parë */
+#workTogetherBtn {
+    background-color: #FFD700; /* Ngjyra e verdhë për butonin */
+    color: #000000; /* Tekst i zi për kontrast të mirë */
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border-radius: 30px; /* Butoni i rrumbullakosur */
+    transition: background-color 0.3s ease-in-out;
+}
+
+#workTogetherBtn:hover {
+    background-color: #ffffff; /* Butoni bëhet i bardhë kur kalon mbi të */
+    color: #000000;
+}
+
+/* Seksioni i Shërbimeve */
+.service-card {
+    background-color: #f8f9fa; /* Ngjyra e bardhë për kartat */
+    color: #000000; /* Tekst i zi për kontrast */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Efekt i lehtë i ngritjes kur kalon mbi të */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Hije për të treguar efektin e ngritjes */
+}
+
+/* ----------------------------------------------------
+   About Page Styles
+----------------------------------------------------- */
+
+/* Seksioni i fotove dhe përshkrimeve të shkurtra */
+.card img {
+    border-radius: 15px 15px 0 0; /* Këndet e rrumbullakosura për fotot në karta */
+}
+
+.card-body {
+    background-color: #1A1A1A; /* Sfond i errët për kartat */
+    color: #ffffff; /* Tekst i bardhë */
+}
+
+/* Seksioni i përshkrimit të detajuar të kompanisë */
+.container-about {
+    background-color: #1A1A1A; /* Ngjyrë e errët për sfondin */
+    color: #ffffff; /* Teksti i bardhë për përshkrimet */
+    padding: 40px;
+    border-radius: 15px;
+}
+
+/* ----------------------------------------------------
+   Technologies Page Styles
+----------------------------------------------------- */
+
+/* Seksioni i logos së teknologjive */
+.technology-logo {
+    height: 100px; /* Lartësia e logos */
+    margin: 20px; /* Hapësira rreth logos */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.technology-logo:hover {
+    transform: scale(1.1); /* Zmadhim kur kalon mbi logo */
+    filter: brightness(1.2); /* Ndriçim për të treguar ndërveprimin */
+}
+
+/* ----------------------------------------------------
+   Contact Page Styles
+----------------------------------------------------- */
+
+/* Seksioni për informacionet e kontaktit */
+.contact-container {
+    background-color: #1A1A1A; /* Sfond i errët për seksionin e kontaktit */
+    padding: 40px;
+    border-radius: 15px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.contact-container h4 {
+    font-family: 'Oswald', sans-serif; /* Font për titujt e seksioneve */
+    color: #FFD700; /* Ngjyrë e verdhë për titujt */
+}
+
+.contact-container p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* ----------------------------------------------------
+   Get in Touch Section - Home Page and Contact Page
+----------------------------------------------------- */
+.get-in-touch {
+    background-color: #121212; /* Ngjyra e sfondit */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.get-in-touch h2 {
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+    color: #FFD700; /* Tekst i verdhë për kontrast të mirë */
+    margin-bottom: 30px;
+}
+
+.get-in-touch p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.get-in-touch .btn {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #000000;
+    background-color: #FFD700;
+}
+
+.get-in-touch .btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}

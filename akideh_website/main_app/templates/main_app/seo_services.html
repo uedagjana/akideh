@@ -1,0 +1,22 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block title %}SEO Services - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">SEO Services</h2>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Our SEO services are designed to improve your search engine ranking and make your website more visible to potential customers. We use proven strategies to drive organic traffic and boost your online presence.
+    </p>
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Services Offered:</h3>
+    <ul class="text-white" style="font-size: 1.1em; line-height: 1.8;">
+        <li>On-page SEO Optimization</li>
+        <li>Keyword Research and Analysis</li>
+        <li>Content Optimization for Higher Rankings</li>
+        <li>Technical SEO for Improved Performance</li>
+    </ul>
+    <div class="text-center my-5">
+        <img src="{% static 'images/seo_banner.jpg' %}" class="img-fluid rounded shadow" alt="SEO Services">
+    </div>
+</div>
+{% endblock %}

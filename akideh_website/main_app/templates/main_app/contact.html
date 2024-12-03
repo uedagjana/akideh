@@ -1,0 +1,138 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+
+{% block title %}Contact Us - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <!-- Seksioni 1: Pse të na kontaktoni -->
+    <div class="row">
+        <div class="col-md-7">
+            <h2 class="text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">Why Contact Us?</h2>
+            <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+                At Akideh, we strive to help our clients grow their business through innovative web solutions. Whether you're a startup, small business, or an established enterprise, our expert team is here to listen to your needs and provide custom digital solutions that help you achieve your goals. Feel free to reach out to us if you want to:
+            </p>
+            <ul class="text-white" style="font-size: 1.1em; line-height: 1.8;">
+                <li>Discuss a new project idea or get a quote</li>
+                <li>Learn more about our services</li>
+                <li>Partner with us for long-term collaboration</li>
+                <li>Get support for an existing project</li>
+            </ul>
+            <p class="text-white mt-4" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+                Our team of experts is eager to connect with you and bring your digital ideas to life.
+            </p>
+        </div>
+
+        <!-- Seksioni 2: Të dhënat e kontaktit -->
+        <div class="col-md-5">
+            <div class="card shadow-lg p-4 bg-dark text-white">
+                <h4 class="text-yellow-dark mb-3" style="font-family: 'Oswald', sans-serif;">Contact Information</h4>
+                <div class="mb-3">
+                    <strong>Phone:</strong>
+                    <p class="mb-1">+355 69 417 3396</p>
+                </div>
+                <div class="mb-3">
+                    <strong>Email:</strong>
+                    <p class="mb-1"><a href="mailto:contact@akideh.com" class="text-yellow-dark">contact@akideh.com</a></p>
+                </div>
+                <div class="mb-3">
+                    <strong>Follow Us On Instagram:</strong>
+                    <p class="mb-1"><a href="https://www.instagram.com/akideh" class="text-yellow-dark">akideh</a></p>
+                    <div class="d-flex">
+                        <a href="#" class="text-yellow-dark mr-3" style="font-size: 1.5em;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-yellow-dark mr-3" style="font-size: 1.5em;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <strong>Location:</strong>
+                    <p class="mb-1">Tirana, Albania</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seksioni 3: Forma e Kontaktit -->
+    <div class="row my-5">
+        <div class="col-md-12">
+            <div class="card shadow-lg p-4 bg-dark text-white">
+                <h4 class="text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">Get in Touch with Us</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="text-yellow-dark">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-yellow-dark">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="text-yellow-dark">Subject</label>
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="text-yellow-dark">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning text-dark">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(135deg, #121212, #1a1a1a); /* Sfondi me gradient */
+        color: #ffffff; /* Ngjyra e bardhë për tekstin */
+    }
+
+    .text-yellow-dark {
+        color: #FFD700; /* Një ngjyrë e artë për tekstin */
+    }
+
+    .card {
+        border-radius: 15px; /* Rrethimi i lehtë për kartat */
+    }
+
+    .form-control {
+        border: 1px solid #ccc; /* Kufiri i lehtë */
+        border-radius: 5px; /* Rrethimi i lehtë */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        background-color: #212121; /* Ngjyra e sfondit të fushave */
+        color: #ffffff; /* Ngjyra e bardhë për tekstin e fushave */
+    }
+
+    .form-control::placeholder {
+        color: #bbb; /* Ngjyra e plote për placeholder-in */
+    }
+
+    .form-control:focus {
+        border-color: #FFC107; /* Ngjyrë kur fokusohet */
+        box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); /* Hije e lehtë kur fokusohet */
+    }
+
+    button.btn-warning {
+        background-color: #FFC107; /* Ngjyrë e artë */
+        border-color: #FFC107;
+        font-weight: bold;
+        border-radius: 5px; /* Rrethimi i lehtë për butonin */
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    button.btn-warning:hover {
+        background-color: #e0a800; /* Ngjyrë e errët në hover */
+        border-color: #e0a800;
+        transform: translateY(-2px); /* Efekti i lëvizjes kur kalon me miun */
+    }
+
+    h4, h2 {
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Hije për tituj */
+    }
+
+    @media (max-width: 768px) {
+        .col-md-7, .col-md-5 {
+            margin-bottom: 30px; /* Hapsira e vogël midis kolonave në pajisje të vogla */
+        }
+    }
+</style>
+{% endblock %}

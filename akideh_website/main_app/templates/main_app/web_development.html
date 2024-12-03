@@ -1,0 +1,32 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block title %}Web Development - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">Custom Web Development</h2>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Web development is at the core of what we do at Akideh. Our team is dedicated to creating modern, responsive, and custom web solutions tailored to your unique needs. We use the latest technologies and follow industry best practices to deliver high-quality websites that offer great user experience and align with your business goals.
+    </p>
+
+    <!-- Fotoja për Web Development -->
+    <div class="text-center my-5">
+        <img src="{% static 'images/web.jpg' %}" class="img-fluid rounded shadow" alt="Web Development Banner">
+    </div>
+
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Key Features:</h3>
+    <ul class="text-white" style="font-size: 1.1em; line-height: 1.8;">
+        <li>Responsive Design for All Devices</li>
+        <li>Custom Backend Solutions for Complex Requirements</li>
+        <li>Integration with Third-Party APIs</li>
+        <li>SEO Optimization from Day One</li>
+        <li>High Performance and Scalability</li>
+    </ul>
+
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Why Choose Us?</h3>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Our expertise spans various industries, ensuring that the web solutions we create are as diverse and unique as the clients we serve. Whether you're a startup looking to establish an online presence or an enterprise aiming for growth, our web development services are designed to meet your needs.
+    </p>
+</div>
+{% endblock %}
+

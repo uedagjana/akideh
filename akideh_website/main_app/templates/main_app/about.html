@@ -1,0 +1,96 @@
+{% extends 'main_app/base.html' %}
+
+{% load static %}
+
+{% block title %}About Us - Akideh Website{% endblock %}
+
+{% block content %}
+
+<!-- Seksioni 1: Fotot dhe Përshkrimet e Shkurtra -->
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">Who We Are</h2>
+    <div class="row">
+
+        <!-- Foto dhe përshkrim 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/websolution.jpg' %}" class="card-img-top" alt="Web Design">
+                <div class="card-body">
+                    <h5 class="card-title">Innovative Web Solutions</h5>
+                    <p class="card-text">We create responsive and innovative websites that help your business grow.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foto dhe përshkrim 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/creativedevelopment.jpg' %}" class="card-img-top" alt="Web Development">
+                <div class="card-body">
+                    <h5 class="card-title">Creative Development</h5>
+                    <p class="card-text">Our expert developers build customized websites for your specific needs.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Foto dhe përshkrim 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <img src="{% static 'images/digitalgrowth.jpg' %}" class="card-img-top" alt="Business Growth">
+                <div class="card-body">
+                    <h5 class="card-title">Digital Growth</h5>
+                    <p class="card-text">From startups to enterprises, we provide tailored solutions to grow digitally.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Seksioni 2: Përshkrimi i Detajuar i Kompanisë -->
+<div class="container my-5 p-5" style="background-color: #1A1A1A; border-radius: 15px;">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">About Our Company</h2>
+    <p class="text-white" style="font-family: 'Merriweather', serif; font-size: 1.2em; line-height: 1.8;">
+        Akideh Website është një kompani lider në fushën e zhvillimit të web-it dhe ofron shërbime të klasit botëror për bizneset që kërkojnë një prezencë unike në internet.
+        Me një ekip të talentuar projektuesish dhe zhvilluesish, ne fokusohemi në krijimin e faqeve të internetit të bukura, të sigurta, dhe plotësisht funksionale.
+        Ne kemi ndihmuar mbi 50 biznese të ndryshme të krijojnë identitetin e tyre në internet dhe të ndërtojnë marrëdhënie të qëndrueshme me klientët e tyre.
+    </p>
+    <p class="text-white" style="font-family: 'Merriweather', serif; font-size: 1.2em; line-height: 1.8;">
+        Qëllimi ynë është të ofrojmë zgjidhje inovative dhe të personalizuara për çdo klient duke përdorur teknologjitë më të fundit, si React, Django, dhe sisteme CMS si WordPress.
+        Misioni ynë është të ndërtojmë përvoja që ndihmojnë bizneset të rriten dhe të lidhin klientët e tyre me vlera të qëndrueshme.
+    </p>
+</div>
+
+<!-- Seksioni 3: Komentet dhe Përshtypjet e Klientëve -->
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">What Our Clients Say</h2>
+    <div class="row">
+
+        <!-- Komenti 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100 bg-dark text-white p-4">
+                <p class="card-text">"Working with Akideh was a game-changer for our business. The website they built was fantastic and increased our online visibility significantly!"</p>
+                <h5 class="card-title mt-4">John Doe, Tech Startup</h5>
+            </div>
+        </div>
+
+        <!-- Komenti 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100 bg-dark text-white p-4">
+                <p class="card-text">"Their team is creative and professional. They delivered on time and exceeded our expectations with the functionality and design of our website."</p>
+                <h5 class="card-title mt-4">Jane Smith, Retail Business</h5>
+            </div>
+        </div>
+
+        <!-- Komenti 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100 bg-dark text-white p-4">
+                <p class="card-text">"We couldn't be happier with the outcome. They really took our brand vision and turned it into a beautiful website that resonates with our audience."</p>
+                <h5 class="card-title mt-4">Alex Johnson, Digital Agency</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'main_app/base.html' %}
+
+{% block title %}E-Commerce Development - Akideh Website{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">E-Commerce Development</h2>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Our E-Commerce solutions are designed to create engaging and scalable online stores that maximize sales and provide a seamless shopping experience for your customers. We focus on building platforms that not only look great but also function seamlessly to ensure high conversion rates.
+    </p>
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Features of Our E-Commerce Solutions:</h3>
+    <ul class="text-white" style="font-size: 1.1em; line-height: 1.8;">
+        <li>Highly Customizable Store Design</li>
+        <li>Secure Payment Gateway Integration</li>
+        <li>Real-Time Inventory Management</li>
+        <li>Advanced Search and Filtering Options</li>
+        <li>Mobile-First Design for Enhanced Accessibility</li>
+    </ul>
+    <div class="text-center my-5">
+        <img src="{% static 'images/e_commerce_banner.jpg' %}" class="img-fluid rounded shadow" alt="E-Commerce Development">
+    </div>
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Why Our E-Commerce Solutions Stand Out?</h3>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Our approach to E-Commerce development involves a deep understanding of your business and customer needs. We ensure that your online store is easy to navigate, fast, and secure, while also incorporating features like personalized recommendations and automated customer support.
+    </p>
+</div>
+{% endblock %}

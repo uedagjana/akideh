@@ -1,0 +1,87 @@
+{% extends 'main_app/base.html' %}
+
+{% block title %}Partner with Us - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4">Partner with Us</h2>
+    <p class="text-center mb-5">Fill in your details below to become a partner and work together with us to build innovative web solutions.</p>
+    
+    <form action="#" method="post" class="mx-auto" style="max-width: 600px; background-color: #ffffff; border-radius: 10px; padding: 30px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); transition: transform 0.3s;">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="companyName">Company Name</label>
+            <input type="text" class="form-control" id="companyName" name="companyName" required placeholder="Enter your company name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" required placeholder="Enter your email address">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required placeholder="Enter your phone number">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-block mt-4">Submit</button>
+    </form>
+</div>
+
+<style>
+    body {
+        background-color: #121212; /* Sfondi i errët */
+        color: #ffffff; /* Ngjyra e bardhë për tekstin */
+    }
+
+    .text-yellow-dark {
+        color: #FFD700; /* Një ngjyrë e artë për tekstin */
+    }
+
+    .form-control {
+        border: 1px solid #ccc; /* Kufiri i lehtë */
+        border-radius: 5px; /* Rrethimi i lehtë */
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #FFC107; /* Ngjyrë kur fokusohet */
+        box-shadow: 0 0 5px rgba(255, 193, 7, 0.5); /* Hije e lehtë kur fokusohet */
+    }
+
+    button.btn-warning {
+        background-color: #FFC107; /* Ngjyrë e artë */
+        border-color: #FFC107;
+        font-weight: bold;
+        border-radius: 5px; /* Rrethimi i lehtë për butonin */
+    }
+
+    button.btn-warning:hover {
+        background-color: #e0a800; /* Ngjyrë e errët në hover */
+        border-color: #e0a800;
+    }
+
+    form {
+        transform: translateY(10px);
+        animation: slideIn 0.5s forwards; /* Animacioni i formës */
+    }
+
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+{% endblock %}

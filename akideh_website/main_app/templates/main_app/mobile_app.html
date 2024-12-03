@@ -1,0 +1,27 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block title %}Mobile App Development - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">Mobile App Development</h2>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        We develop high-quality mobile applications for Android and iOS platforms that help your business reach more customers and provide them with exceptional experiences. Our mobile apps are designed to be intuitive, efficient, and tailored to your business goals.
+    </p>
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Our Expertise Includes:</h3>
+    <ul class="text-white" style="font-size: 1.1em; line-height: 1.8;">
+        <li>Native Android and iOS App Development</li>
+        <li>Cross-Platform Development with Flutter and React Native</li>
+        <li>High Performance and Scalability</li>
+        <li>Integration with Backend APIs</li>
+        <li>In-App Purchases and Monetization Strategies</li>
+    </ul>
+    <div class="text-center my-5">
+        <img src="{% static 'images/mobile_app_banner.jpg' %}" class="img-fluid rounded shadow" alt="Mobile App Development">
+    </div>
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Why Choose Our Mobile App Services?</h3>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Our mobile app development services are focused on creating a delightful user experience that keeps users engaged. We leverage the latest technologies and work closely with our clients to ensure the app meets their business needs and is capable of scaling as the business grows.
+    </p>
+</div>
+{% endblock %}

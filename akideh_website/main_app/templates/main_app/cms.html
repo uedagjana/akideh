@@ -1,0 +1,27 @@
+{% extends 'main_app/base.html' %}
+{% load static %}
+{% block title %}CMS Development - Akideh Website{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+    <h2 class="text-center text-yellow-dark mb-4" style="font-family: 'Oswald', sans-serif;">CMS Development</h2>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        Our CMS development services allow you to easily manage your website content, whether you're using WordPress, Joomla, or a custom CMS built specifically for your business. We create user-friendly content management systems that help you keep your website up-to-date and aligned with your marketing goals.
+    </p>
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Features of Our CMS Solutions:</h3>
+    <ul class="text-white" style="font-size: 1.1em; line-height: 1.8;">
+        <li>Simple and Intuitive User Interface</li>
+        <li>Customizable Themes and Plugins</li>
+        <li>SEO Tools Integration</li>
+        <li>Content Scheduling and Publishing</li>
+        <li>Role-Based Access for Team Members</li>
+    </ul>
+    <div class="text-center my-5">
+        <img src="{% static 'images/cms_banner.jpg' %}" class="img-fluid rounded shadow" alt="CMS Development">
+    </div>
+    <h3 class="text-yellow-dark mt-5" style="font-family: 'Oswald', sans-serif;">Why Use a CMS?</h3>
+    <p class="text-white" style="font-family: 'Roboto', sans-serif; font-size: 1.1em; line-height: 1.8;">
+        A content management system makes it easy to add, update, and manage your website’s content without requiring extensive technical knowledge. With our CMS solutions, you can take control of your digital presence and quickly respond to new business opportunities.
+    </p>
+</div>
+{% endblock %}
